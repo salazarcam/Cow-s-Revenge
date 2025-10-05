@@ -1,0 +1,8 @@
+extends Sprite2D
+
+func _process(_delta):
+	var parent_velocity = get_parent().velocity
+	if parent_velocity.x > 0:
+		flip_h = false
+	elif parent_velocity.x < 0: 
+		flip_h = true
